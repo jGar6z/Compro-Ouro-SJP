@@ -743,23 +743,23 @@ White: D9D9D9
     }
     .gallery .manual-navigation{
         width: 300px;
-        margin-top: -30px;
+        margin-top: -35px;
     }
     .gallery .manual-btn{
-        padding: 3px;
+        padding: 8px;
     }
     .gallery .manual-btn:not(:last-child){
-        margin-right: 30px;
+        margin-right: 35px;
     }
     .gallery .navigation-auto div{
-        padding: 3px;
+        padding: 8px;
     }
     .gallery .navigation-auto{
         width: 300px;
-        margin-top: 170px;
+        margin-top: 165px;
     }
     .gallery .navigation-auto div:not(:last-child){
-        margin-right: 30px;
+        margin-right: 35px;
     }
 }
 
@@ -846,20 +846,20 @@ White: D9D9D9
         margin-top: 20px;
     }
     .gallery .manual-btn{
-        padding: 5px;
+        padding: 10px;
     }
     .gallery .manual-btn:not(:last-child){
-        margin-right: 40px;
+        margin-right: 55px;
     }
     .gallery .navigation-auto div{
-        padding: 5px;
+        padding: 10px;
     }
     .gallery .navigation-auto{
         width: 600px;
         margin-top: 320px;
     }
     .gallery .navigation-auto div:not(:last-child){
-        margin-right: 40px;
+        margin-right: 55px;
     }
 }
 
