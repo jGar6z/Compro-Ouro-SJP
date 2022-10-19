@@ -1,1 +1,0 @@
-# Compro-Ouro-SJP
