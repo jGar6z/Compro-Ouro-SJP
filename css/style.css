@@ -26,7 +26,7 @@ White: D9D9D9
 
 /*Header*/
 
-#header{
+header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,11 +35,11 @@ White: D9D9D9
     border-bottom: 2.5px solid #EDC9A1;
 }
 
-#header #logo img{
+header #logo img{
     width: 300px;
 }
 
-#header #menu{
+header #menu{
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -48,7 +48,7 @@ White: D9D9D9
     left: 50%;
     right: 50%;
 }
-#header #menu a{
+header #menu a{
     position: relative;
     display: flex;
     font-weight: 600;
@@ -58,18 +58,18 @@ White: D9D9D9
     margin: 0 1vw;
     padding: 0 10px;
 }
-#header #menu a.active{
+header #menu a.active{
     color: #EDC9A1;
 }
 
-#header #btn{
+header #btn{
     font-weight: 700;
     font-size: 16px;
     border: 2.5px solid #EDC9A1;
     padding: 15px;
     color: #D9D9D9;
 }
-#header #btn:hover{
+header #btn:hover{
     transition: 400ms;
     background-color: #EDC9A1;
     color: #333333;
@@ -82,7 +82,7 @@ White: D9D9D9
 /*Header PC*/
 
 @media screen and (min-width:1024px) {
-    #header #menu a::after{
+    header #menu a::after{
         content: "";
         position: absolute;
         background-color: #EDC9A1;
@@ -92,10 +92,10 @@ White: D9D9D9
         bottom: -10px;
         transition: 0.3s;
     }
-    #header #menu a:hover{
+    header #menu a:hover{
         color: #EDC9A1;
     }
-    #header #menu a:hover::after{
+    header #menu a:hover::after{
         width: 100%;
     }
 }
@@ -103,14 +103,14 @@ White: D9D9D9
 /*Header Smartphone*/
 
 @media (max-width: 600px) {
-    #header #logo img{
+    header #logo img{
         width: 200px;
     }
-    #header #btn{
+    header #btn{
         display: none;
     }
 
-    #header {
+    header {
         box-sizing: border-box;
         height: 70px;
         padding: 1rem;
@@ -120,12 +120,12 @@ White: D9D9D9
         background: #242424;
         border-bottom: 2.5px solid #EDC9A1;
     }
-    #header #menu {
+    header #menu {
         display: block;
         position: absolute;
         width: 100%;
         top: 70px;
-        right: 0px;
+        right: 0;
         left: 0;
         background: #242424;
         transition: 0.6s;
@@ -139,13 +139,13 @@ White: D9D9D9
         visibility: visible;
         overflow-y: auto;
     }
-    #header #menu a {
+    header #menu a {
         display: block;
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 0.4px solid #EDC9A1;
     }
-    #header #btn-mobile {
+    header #btn-mobile {
         color: #EDC9A1;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
@@ -189,10 +189,10 @@ White: D9D9D9
 /*Header Tablet*/
 
 @media screen and (min-width:767px) and (max-width:1024px) {
-    #header{
+    header{
         padding: 12px 50px;
     }
-    #header #logo{
+    header #logo{
         content: url(../imagens/logo-tab.png);
         width: 80px;
     }
