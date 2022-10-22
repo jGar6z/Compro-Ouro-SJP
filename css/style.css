@@ -26,22 +26,20 @@ White: D9D9D9
 
 /*Header*/
 
-.pc{
-    background-color: #242424;
-    border-bottom: 2.5px solid #EDC9A1;
-    padding: 3vh;
-}
-.pc nav{
+#header{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0 5vw;
+    padding: 3vh 7vw;
+    background: #242424;
+    border-bottom: 2.5px solid #EDC9A1;
 }
-.pc nav .logo{
+
+#header #logo img{
     width: 300px;
 }
-.pc nav div{
+
+#header #menu{
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -50,41 +48,41 @@ White: D9D9D9
     left: 50%;
     right: 50%;
 }
-
-.pc .item{
+#header #menu a{
     position: relative;
+    display: flex;
     font-weight: 600;
     font-size: 16px;
     color: #D9D9D9;
     text-decoration: none;
-    margin: 1vw;
+    margin: 0 1vw;
     padding: 0 10px;
 }
-.pc .active{
+#header #menu a.active{
     color: #EDC9A1;
 }
 
-.pc .btn{
+#header #btn{
     font-weight: 700;
     font-size: 16px;
     border: 2.5px solid #EDC9A1;
     padding: 15px;
     color: #D9D9D9;
 }
-.pc .btn:hover{
+#header #btn:hover{
     transition: 400ms;
     background-color: #EDC9A1;
     color: #333333;
 }
 
-#header{
+#btn-mobile {
     display: none;
 }
 
 /*Header PC*/
 
 @media screen and (min-width:1024px) {
-    .pc .item::after{
+    #header #menu a::after{
         content: "";
         position: absolute;
         background-color: #EDC9A1;
@@ -94,29 +92,24 @@ White: D9D9D9
         bottom: -10px;
         transition: 0.3s;
     }
-    .pc .item:hover{
+    #header #menu a:hover{
         color: #EDC9A1;
     }
-    .pc .item:hover::after{
+    #header #menu a:hover::after{
         width: 100%;
     }
 }
 
-/*Header Mobile*/
+/*Header Smartphone*/
 
-@media screen and (max-width:767px) {
-    .pc{
+@media (max-width: 600px) {
+    #header #logo img{
+        width: 200px;
+    }
+    #header #btn{
         display: none;
     }
-    ul {
-        margin: 0px;
-        padding: 0px;
-    }
-    a {
-        color: #EDC9A1;
-        text-decoration: none;
-        font-family: "Montserrat", sans-serif;
-    }
+
     #header {
         box-sizing: border-box;
         height: 70px;
@@ -127,33 +120,16 @@ White: D9D9D9
         background: #242424;
         border-bottom: 2.5px solid #EDC9A1;
     }
-    #menu {
-        display: flex;
-        list-style: none;
-        gap: 0.5rem;
-    }
-    #menu a {
-        display: block;
-        padding: 0.5rem;
-    }
-    #btn-mobile {
-        display: none;
-        color: #EDC9A1;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 600;
-    }
-    #header{
-        display: flex;
-    }
-    #menu {
+    #header #menu {
         display: block;
         position: absolute;
         width: 100%;
         top: 70px;
         right: 0px;
+        left: 0;
         background: #242424;
         transition: 0.6s;
-        z-index: 1000;
+        z-index: 10000;
         height: 0;
         visibility: hidden;
         overflow-y: hidden;
@@ -163,14 +139,18 @@ White: D9D9D9
         visibility: visible;
         overflow-y: auto;
     }
-    #menu a {
+    #header #menu a {
+        display: block;
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 0.4px solid #EDC9A1;
     }
-    #header #logo img{
-        width: 200px;
+    #header #btn-mobile {
+        color: #EDC9A1;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
     }
+    
     #btn-mobile {
         display: flex;
         padding: 0.5rem 1rem;
@@ -184,8 +164,7 @@ White: D9D9D9
         border-top: 2px solid;
         width: 20px;
     }
-    #hamburger::after,
-    #hamburger::before {
+    #hamburger::after, #hamburger::before {
         content: '';
         display: block;
         width: 20px;
@@ -210,10 +189,10 @@ White: D9D9D9
 /*Header Tablet*/
 
 @media screen and (min-width:767px) and (max-width:1024px) {
-    .pc{
-        padding: 10px;
+    #header{
+        padding: 12px 50px;
     }
-    .pc nav .logo{
+    #header #logo{
         content: url(../imagens/logo-tab.png);
         width: 80px;
     }
