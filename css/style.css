@@ -1340,10 +1340,6 @@ footer .bottom .terms{
     flex-direction: row;
 }
 
-footer .bottom .copyright{
-    align-items: center;
-}
-
 footer .bottom .txt{
     color: #D9D9D9;
     font-weight: 400;
