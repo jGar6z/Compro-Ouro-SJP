@@ -1362,7 +1362,11 @@ footer .bottom .txt{
         gap: 15px;
     }
     footer .bottom .terms{
-        border-bottom: 0.4px solid #EDC9A1;
+        flex-direction: column;
+        gap: 5px
+    }
+    footer .bottom .terms .dot{
+        display: none;
     }
 }
 
