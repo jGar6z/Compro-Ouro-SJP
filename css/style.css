@@ -1361,6 +1361,9 @@ footer .bottom .txt{
         text-align: center;
         gap: 15px;
     }
+    footer .bottom .terms{
+        border-bottom: 0.4px solid #EDC9A1;
+    }
 }
 
 /*Footer Tablet*/
