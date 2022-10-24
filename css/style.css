@@ -1333,9 +1333,15 @@ footer .bottom{
     padding: 3vh;
     margin: 0 5vw;
     border-top: 0.4px solid #EDC9A1;
+    gap: 25px;
+}
+footer .bottom .terms{
+    display: flex;
+    flex-direction: row;
 }
 
 footer .bottom .txt{
+    color: #D9D9D9;
     font-weight: 400;
     font-size: 16px;
 }
