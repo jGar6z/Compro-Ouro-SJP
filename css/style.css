@@ -1197,6 +1197,7 @@ header #btn:hover{
 .contact .content .info .grid p{
     font-weight: 400;
     color: #a9a9a9;
+    padding: 4px 0;
 }
 
 .contact .content .map{
